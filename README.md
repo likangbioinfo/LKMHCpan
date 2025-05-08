@@ -5,7 +5,10 @@ Antigens/tumor-specific antigens (TAAs/TSAs), which arising from genetic alterat
 # Installation
 We recommend using the configured Docker:
 
-docker pull lkmhcpan2
+docker push liqingss/lkmhcpan:v1.0.2
 
 # Usage
-python ./dist/LKMHCpan2_predict.py -i ./Test/peptide_HLA_test.tsv -o peptide_HLA_test_predict_decrymodel_pyobfuscate_pyarmor.tsv -b 64 -ic 0_1
+# 1) docker
+python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i /workspace/LKMHCpan/Test/peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
+# 2) singularity
+singularity exec --nv lkmhcpan.sif python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i /workspace/LKMHCpan/Test/peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
