@@ -4,7 +4,8 @@ Antigens/tumor-specific antigens (TAAs/TSAs), which arising from genetic alterat
 
 # Installation
 We recommend using the configured Docker:
-docker push liqingss/lkmhcpan:v1.0.2
+
+docker pull liqingss/lkmhcpan:v1.0.2
 
 # Usage
 # 1) docker
