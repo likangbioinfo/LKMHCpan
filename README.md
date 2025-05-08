@@ -9,6 +9,7 @@ docker push liqingss/lkmhcpan:v1.0.2
 
 # Usage
 # 1) docker
-python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i /workspace/LKMHCpan/Test/peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
+python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
 # 2) singularity
-singularity exec --nv lkmhcpan.sif python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i /workspace/LKMHCpan/Test/peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
+Convert the docker image to a singularity image
+singularity exec --nv lkmhcpan.sif python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
