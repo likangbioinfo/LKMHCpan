@@ -1,5 +1,6 @@
 
-![lklife](https://github.com/user-attachments/assets/9d3511e6-d1dc-42b2-85ab-eeed1d584549)
+![LKMHCpanlog](https://github.com/user-attachments/assets/0947a35c-7125-4bb3-8c51-82115448f264)
+
 
 # LKMHCpan
 A pan-specific peptide-MHC class I binding prediction tool
