@@ -22,6 +22,7 @@ The script is invoked from the command line with various parameters that control
 -h, --help show this help message and exit
 
 ```-i, --input_file```: [required] Input the file to be predicted, the default format is [peptide HLA]; if the format is not the default, you need to set the [input_header] and [pep_hla_column] parameters.
+
 ```-ih, --input_header```: [default] default prediction file is without headers; if there are headers, it needs to be set to "yes".
 
 ```-ic, --pep_hla_column```: [default] Specify the column number(s) for peptide_hla in the input file to be predicted, with the default being columns 0 and 1, counting from 0.
@@ -33,7 +34,7 @@ The script is invoked from the command line with various parameters that control
 ```-o, --output```: [required] output file name
 
 ## Examples
-### docker
+### docker👍recommend
 python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
 ### singularity
 Convert the docker image to a singularity image
