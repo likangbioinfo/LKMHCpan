@@ -16,9 +16,9 @@ The script supports CPU or GPU, Try GPU first; if not, call CPU.
 
 The script is invoked from the command line with various parameters that control its operation. Here is the basic syntax:
 
-python LKMHCpan2_predict.py --help
+|python LKMHCpan2_predict.py --help|
 
-# Options
+* Options
 -h, --help show this help message and exit
 -i, --input_file: [required] Input the file to be predicted, the default format is [peptide HLA]; if the format is not the default, you need to set the [input_header] and [pep_hla_column] parameters.
 -ih, --input_header: [default] default prediction file is without headers; if there are headers, it needs to be set to "yes".
