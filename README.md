@@ -20,17 +20,22 @@ The script is invoked from the command line with various parameters that control
 
 ## Options
 -h, --help show this help message and exit
+
 ```-i, --input_file```: [required] Input the file to be predicted, the default format is [peptide HLA]; if the format is not the default, you need to set the [input_header] and [pep_hla_column] parameters.
 ```-ih, --input_header```: [default] default prediction file is without headers; if there are headers, it needs to be set to "yes".
--ic, --pep_hla_column: [default] Specify the column number(s) for peptide_hla in the input file to be predicted, with the default being columns 0 and 1, counting from 0.
--b, --batch_size: [default] batch size,default:32
--l, --hla_list: [optional] choose whether to input a headerless HLA list file (with each HLA subtype on a separate line). If such a file is provided, the HLA subtypes from this document will be prioritized; otherwise, the HLA subtypes from the `input_file` will be read.
--o, --output: [required] output file name
 
-# Examples
-# 1) docker
+```-ic, --pep_hla_column```: [default] Specify the column number(s) for peptide_hla in the input file to be predicted, with the default being columns 0 and 1, counting from 0.
+
+```-b, --batch_size```: [default] batch size,default:32
+
+```-l, --hla_list```: [optional] choose whether to input a headerless HLA list file (with each HLA subtype on a separate line). If such a file is provided, the HLA subtypes from this document will be prioritized; otherwise, the HLA subtypes from the `input_file` will be read.
+
+```-o, --output```: [required] output file name
+
+## Examples
+### docker
 python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
-# 2) singularity
+### singularity
 Convert the docker image to a singularity image
 
 singularity exec --nv lkmhcpan.sif python /workspace/LKMHCpan/dist/LKMHCpan2_predict.py -i peptide_HLA_test.tsv -o peptide_HLA_test_predict.tsv -b 64 -ic 0_1
