@@ -9,7 +9,7 @@ Antigens/tumor-specific antigens (TAAs/TSAs), which arising from genetic alterat
 # Installation
 **We recommend using the zenodo download LKMHCpan singularity**👍:
 
-download LKMHCpan singularity from zenodo：[10.5281/zenodo.18081485](https://doi.org/10.5281/zenodo.18081485)
+download LKMHCpan singularity from zenodo：[10.5281/zenodo.18081485](https://doi.org/10.5281/zenodo.18081485),click https://doi.org/10.5281/zenodo.18081485.
 
 ```LKMHCpan：lkmhcpan1.0.3.sif```
 ```Train Data：Table_MHCI_LKMHCpandata_Trim_final.tsv```
